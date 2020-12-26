@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Super Hero Creation Kit</title>
+    </head>
+    <body>
+        <h1><%= @team.name %></h1>
+        <h2>Team Motto: <%= @team.motto %></h2>
+        <% @members.each do |member| %>
+            <p>
+                <h2>Hero Name: <%= member.name %></h2>
+                <br>
+                <label>Hero Power: <%= member.power %></label>
+                <br>
+                <label>Hero Biography: <%= member.bio %></label>
+            </p>
+        <% end %>
+    </body>
+</html>
